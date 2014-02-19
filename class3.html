@@ -38,7 +38,7 @@
 			<div class="slides">
 			  <!-- Opening slide -->
         <section>
-          <img src = "images/gdi_logo_badge.png">
+          <img src="images/gdi_logo_badge.png">
           <h3>Beginning HTML and CSS</h3>
           <h4>Class 3</h4>
         </section>
@@ -46,9 +46,9 @@
         <!-- Welcome-->
         <section>
           <h3>Welcome!</h3>
-          <div class = "left-align">
+          <div class="left-align">
           <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
+          <p class="green">Some "rules"</p>
           <ul>
             <li>We are here for you!</li>
             <li>Every question is important</li>
@@ -71,13 +71,13 @@
         <!-- Inline vs. block-->
         <section>
           <h3>Inline vs Block</h3>
-          <div class = "left" style="width: 50%; text-align: left;">
-            <div class = "fragment">
+          <div class="left" style="width: 50%; text-align: left;">
+            <div class="fragment">
               <p>So far, we have mostly seen <span class="green">"block"</span> elements</p>
               <p>They appear on the next line, like paragraphs</p>
             </div> 
             <br/><br/>
-            <div class = "fragment">
+            <div class="fragment">
               <p>There are also <span class="green">"inline"</span> elements</p>
               <p>They appear on the same line that they are written on.</p>
             </div>
@@ -118,7 +118,7 @@
   <!-- Div continued-->
         <section>
           <h3>Grouping elements with div</h3>
-          <div class = "left-align">
+          <div class="left-align">
           <ul>
           <li>The div tag is used everywhere to group elements together into sections.</li>
           <li>For example, what if we want the first 2 paragraphs of a section to be right-aligned, purple & bold, but we don't want any other paragraphs to be right-aligned?</li>
@@ -129,7 +129,7 @@
         
         <section>
           <h3>Grouping elements with div, cont.</h3>
-<pre><code class = "html">
+<pre><code class="html">
 .align-right {
   text-align: right;
   color: purple; 
@@ -137,7 +137,7 @@
 }
 </code></pre>
 
-<pre><code class ="html">
+<pre><code class="html">
 &lt;div class="align-right">
   &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit&lt;/p>
   &lt;p>Sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p> 
@@ -145,11 +145,11 @@
 &lt;p>Magna aliqua. Ut enim ad minim veniam.&lt;/p> 
 &lt;p>Quis nostrud exercitation ullamco.&lt;/a>
 </code></pre>
-<div style = "text-align:right;font-weight: bold; font-size: 70%;" class = "green">
+<div style="text-align:right;font-weight: bold; font-size: 70%;" class="green">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
   <p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
 </div>
-<div class = "left-align" style="font-size: 70%;">
+<div class="left-align" style="font-size: 70%;">
 <p>Magna aliqua. Ut enim ad minim veniam.</p>
 <p>Quis nostrud exercitation ullamco.</a>
 
@@ -172,17 +172,17 @@
           <h3>Span</h3>
           <p>Span is used to apply a specific style inline</p>
           
-<pre><code class ="html">
+<pre><code class="html">
 .yellow {
   color: yellow;
 }
 </code></pre>
 
-<pre><code class ="html">
-&lt;p>Paragraph with &lt;span class ="yellow">yellow&lt;/span> text.&lt;/p>
+<pre><code class="html">
+&lt;p>Paragraph with &lt;span class="yellow">yellow&lt;/span> text.&lt;/p>
 </code></pre>
 
-<p>Paragraph with <span class ="yellow">yellow</span> text.</p>
+<p>Paragraph with <span class="yellow">yellow</span> text.</p>
         </section>
         <!-- Exercise-->
          <section>
@@ -192,19 +192,19 @@
         <!-- Pseudo class-->
         <section>
           <h3>Pseudo-classes, more CSS for links</h3>
-          <div class ="left left-align" style="width:50%">
+          <div class="left left-align" style="width:50%">
           <p>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
           <br/>
           <p>CSS pseudo-classes are used to add special effects to some selectors.</p>
           </div>
           Syntax:	
-<pre><code class ="html">
+<pre><code class="html">
 selector:pseudo-class {
   property: value;	
 }
 </code></pre>
           Example:
-<pre><code class ="html">
+<pre><code class="html">
 a:link {
   text-decoration: none;
 }
@@ -214,7 +214,7 @@ a:link {
         <!-- Pseudo class-->
         <section>
           <h3>Pseudo-classes, more CSS for links</h3>
-<pre><code class ="html">
+<pre><code class="html">
   a:link    { color: #FF0000; } /* unvisited link */
   a:visited { color: #00FF00; } /* visited link */
   a:focus   { color: #FF00FF; } /* keyboard focus */
@@ -234,34 +234,34 @@ a:link {
         <!-- Box model-->
         <section>
           <h3>Box Model</h3>
-          <img src ="images/box-model.png"/>
+          <img src="images/box-model.png"/>
         </section>
         
         <!-- Padding -->
         <section>
           <h3>Padding</h3>
           <p>Space between the border and the content</p>
-          <img src ="images/box-model.png"/>
+          <img src="images/box-model.png"/>
         </section>
         <section>
           <h3>Padding</h3>
           <p>Space between the border and the content</p>
           <p>Adds to the total width of the box.</p>
-          <img src ="images/box-model-padding.png"/>
+          <img src="images/box-model-padding.png"/>
         </section>
         
         <section>
           <h3>Padding</h3>
           15 pixels on all sides
-<pre><code class ="html">
+<pre><code class="html">
 padding: 15px;
 </code></pre>
           10 pixels on top only
-<pre><code class ="html">
+<pre><code class="html">
 padding-top: 10px;
 </code></pre>
           10 on top, 5 on right, 3 on bottom, 5 on left
-<pre><code class ="html">
+<pre><code class="html">
 padding: 10px 5px 3px 5px;
 </code></pre>  
         </section>
@@ -269,46 +269,46 @@ padding: 10px 5px 3px 5px;
         <section>
           <h3>Padding</h3>
           <p>Four values<p>
-<pre><code class = "html">
+<pre><code class="html">
   padding: top right bottom left;
 </code></pre>
           <p>Two values</p>
-<pre><code class = "html">
+<pre><code class="html">
   padding: top/bottom right/left;
 </code></pre>
           <p>One value</p>
-<pre><code class = "html">
+<pre><code class="html">
   padding: all;
 </code></pre>
         </section>
        
         <section>
           <h3>Padding</h3>
-<pre><code class ="html">
+<pre><code class="html">
   padding: 10px 20px 30px 40px;
 </code></pre>
-        <img src ="images/box-model-padding2.png"/>
+        <img src="images/box-model-padding2.png"/>
         </section>
        
         <!-- Border-->
         <section>
           <h3>Border</h3>
           <p>The edge around the box, specified as "thickness, style, color."</p>
-          <img src ="images/box-model-border.png">
+          <img src="images/box-model-border.png">
         </section>
         
         <section>
           <h3>Border</h3>
           <p>A solid red border</p>
-<pre><code class = "html">
+<pre><code class="html">
   border: 1px solid #ff0000;
 </code></pre>
           <p>A thick dotted black top border</p>
-<pre><code class ="html">
+<pre><code class="html">
   border-top: 4px dotted #000000;
 </code></pre>
           <p>Two diﬀerent border styles</p>
-<pre><code class ="html">
+<pre><code class="html">
   border-top: 1px solid #ff0000;
   border-bottom: 4px dotted #000000;
 </code></pre>
@@ -316,7 +316,7 @@ padding: 10px 5px 3px 5px;
        
         <section>
           <h3>Border - Other Properties</h3>
-<pre><code class ="html">
+<pre><code class="html">
   border-width: 10px;
   border-style: dashed;
   border-color: #666666;
@@ -328,21 +328,21 @@ padding: 10px 5px 3px 5px;
         <section>
           <h3>Margin</h3>
           <p>The transparent area around the box that separates it from other elements.</p>
-          <img src ="images/box-model-margin.png"/>
+          <img src="images/box-model-margin.png"/>
         </section>
         
         <section>
           <h3>Margin</h3>
           <p>15 pixels on all sides</p>
-<pre><code class = "html">
+<pre><code class="html">
   margin: 15px;
 </code></pre>
           <p>10 on top, 5 on right, 3 on bottom, 5 on left</p>
-<pre><code class ="html">
+<pre><code class="html">
   margin: 10px 5px 3px 5px;
 </code></pre>
           <p>10 pixels on top</p>
-<pre><code class = "html">
+<pre><code class="html">
   margin-top: 10px;
 </code></pre>
         </section>
@@ -351,12 +351,12 @@ padding: 10px 5px 3px 5px;
           <h3>Auto Margin</h3>
           <p>If a margin is set to auto on a box that has width, it will take up as much space as possible.</p>
           <p>CENTERED</p>
-<pre><code class ="html">
+<pre><code class="html">
   margin: auto;
   width: 300px;
 </code></pre>
           <p>FLUSH-RIGHT</p>
-<pre><code class = "html">
+<pre><code class="html">
   margin-left: auto;
   margin-right: 5px;
   width: 300px;
@@ -392,8 +392,8 @@ padding: 10px 5px 3px 5px;
 		</section>
         <section>
           <h2>Questions?</h2>
-          <div style = "font-size:1200%; height:100%; margin-top:30%" class ="blue">?
-            <div class ="clear"></div></div>
+          <div style="font-size:1200%; height:100%; margin-top:30%" class="blue">?
+            <div class="clear"></div></div>
         </section>
       
       </div>

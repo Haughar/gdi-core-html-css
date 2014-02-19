@@ -38,7 +38,7 @@
 			<div class="slides">
 			  <!-- Opening slide -->
         <section>
-          <img src = "images/gdi_logo_badge.png">
+          <img src="images/gdi_logo_badge.png">
           <h3>Beginning HTML and CSS</h3>
           <h4>Class 2</h4>
         </section>
@@ -46,9 +46,9 @@
         <!-- Welcome-->
         <section class="hide-pdf">
           <h3>Welcome!</h3>
-          <div class = "left-align">
+          <div class="left-align">
           <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
+          <p class="green">Some "rules"</p>
           <ul>
             <li>We are here for you!</li>
             <li>Every question is important</li>
@@ -61,10 +61,10 @@
         <!-- Role of HTML v. CSS-->
         <section>
           <h3>Anatomy of a website</h3>
-          <div class = "blue"> Your Content</div>
-          <div><span class = "blue">+ HTML: </span>Structure</div>
-          <div><span class = "blue">+ CSS: </span>Presentation</div>
-          <div class = "blue">= Your Website</div>
+          <div class="blue"> Your Content</div>
+          <div><span class="blue">+ HTML: </span>Structure</div>
+          <div><span class="blue">+ CSS: </span>Presentation</div>
+          <div class="blue">= Your Website</div>
           <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
         </section>
 
@@ -79,12 +79,12 @@
         <section>
           <h3>CSS: What can it do?</h3>
           <p>All colored text, position, and size</p>
-          <img src = "images/homepage-view.png">
+          <img src="images/homepage-view.png">
         </section>
         
         <section>
           <h3>CSS: What does it look like?</h3>
-          <img src = "images/homepage-css.png">
+          <img src="images/homepage-css.png">
         </section>
         
         <!-- The CSS Rule-->
@@ -94,12 +94,12 @@
         </section>
         <section>
           <h3>The CSS Rule</h3>
-<pre><code class = "html">
+<pre><code class="html">
 selector {
   property: value;
 }
 </code></pre>
-          <div class = "left-align">
+          <div class="left-align">
             <p>A block of CSS code is a rule.</p>
             <p>The rule starts with a selector.</p>
             <p>It has sets of properties and values.</p>
@@ -110,13 +110,13 @@ selector {
         <!-- CSS Syntax -->
         <section>
           <h3>CSS Syntax</h3>
-          <div class = "left-align">
+          <div class="left-align">
             <p>Declarations:  Property and value of style you plan use on HTML element. </p>
           <p>Declarations end with a semicolon</p>
           <p>Declaration groups are surrounded by curly brackets.</p>
           </div>
           
-<pre><code class = "html">
+<pre><code class="html">
 selector {
   property: value;
   property: value;
@@ -128,13 +128,13 @@ selector {
         <!-- Selectors elements-->
         <section>
 			  <h3>Selector: Element</h3>
-<pre><code class = "html">
+<pre><code class="html">
 p {
   property: value;
 }
 </code></pre>
       <p>Selects all paragraph elements.</p>
-<pre><code class = "html">
+<pre><code class="html">
 img {
   property: value;
 }
@@ -145,14 +145,14 @@ img {
         <!-- Selectors ID-->
         <section>
 			    <h3>Selector: ID</h3>
-<pre><code class = "html">
+<pre><code class="html">
 #footer {
   property: value;
 }
 </code></pre>
           <p>Selects all elements with an id of "footer".</p>
           
-<pre><code class = "html">
+<pre><code class="html">
 &lt;p id="footer">Copyright 2011&lt;/p>
 </code></pre>
          <p>The associated HTML.</p>
@@ -161,14 +161,14 @@ img {
         <!-- Selectors Class-->
         <section>
 			    <h3>Selector: Class</h3>
-<pre><code class = "html">
+<pre><code class="html">
 .warning {
   color: red;
 }
 </code></pre>
           <p>Selects all elements with a class of "warning".</p>
 
-<pre><code class = "html">
+<pre><code class="html">
 &lt;p class="warning">Run away!&lt;/p>
 </code></pre>
          <p>The associated HTML.</p>
@@ -177,12 +177,12 @@ img {
         <!-- ID vs Class-->
         <section>
         <h3>IDs vs. Classes</h3>
-        <div class = "left-align">
-          <span class = "yellow">ID</span> -- Should only apply to one element on a webpage. I.E. A webpage only has one footer.
+        <div class="left-align">
+          <span class="yellow">ID</span> -- Should only apply to one element on a webpage. I.E. A webpage only has one footer.
           <p>The "#" is how you tell CSS "this is an id."</p>
         </div>
-        <div class = "left-align">
-          <span class = "yellow">Class</span> -- Lots of elements can have the same class. I.E. There can be many warning on one webpage.
+        <div class="left-align">
+          <span class="yellow">Class</span> -- Lots of elements can have the same class. I.E. There can be many warning on one webpage.
           <p>The "." is how you tell CSS "this is a class name."</p>
         </div>
       </section>  
@@ -190,13 +190,13 @@ img {
         <!-- Selector position-->
         <section>
         <h3>Selector: Position</h3>
-<pre><code class = "html">
+<pre><code class="html">
 p em {
   color: yellow;
 }
 </code></pre>
        <p>Selects all em elements that are within a paragraph</p>
-<pre><code class = "html">
+<pre><code class="html">
 &lt;p>This is &lt;em>important.&lt;/em>&lt;/p>
 </code></pre>
         <p>The associated HTML.</p>
@@ -206,7 +206,7 @@ p em {
         <section>
         <h3>Property Values</h3>
         <p>Each property can have one or more comma separated values.</p>
-<pre><code class = "html">
+<pre><code class="html">
 p{
   color: white;
   background-color: red;
@@ -219,7 +219,7 @@ p{
         <section>
           <h3>Property: Color</h3>
           <p>The color property changes the color of the text.</p>
-<pre><code class = "html">
+<pre><code class="html">
 p {
   color: red;
   color: #ff0000;
@@ -237,7 +237,7 @@ p {
         <section>
           <h3>Property: Background-color</h3>
           <p>The background-color property changes the color of the background.</p>
-<pre><code class = "html">
+<pre><code class="html">
 p {
   background-color: black;
   background-color: #000000;
@@ -250,7 +250,7 @@ p {
         <section>
           <h3>Property: Font-family</h3>
           <p>The font-family property deﬁnes which font is used.</p>
-<pre><code class = "html">
+<pre><code class="html">
 p {
   font-family: "Times New Roman";
   font-family: serif;
@@ -266,7 +266,7 @@ p {
         <section>
           <h3>Property: Font-size</h3>
           <p>The font-size property speciﬁes the size of the font.</p>
-<pre><code class = "html">
+<pre><code class="html">
 p {
   font-size: 12px;
   font-size: 1.5em;
@@ -281,7 +281,7 @@ p {
         <!-- Fonts-->
         <section>
           <h3>Property: Fonts (shorthand)</h3>
-<pre><code class = "html">
+<pre><code class="html">
 p {
   font-style: italic;
   font-weight: bold;
@@ -290,7 +290,7 @@ p {
 }
 </code></pre>
           OR
-<pre><code class = "html">
+<pre><code class="html">
 p {
   font: italic bold 10px sans-serif;
 }
@@ -300,7 +300,7 @@ p {
         <!-- Connecting HTML to CSS-->
         <section>
           <h3>Connecting CSS to HTML</h3>
-          <p class = "green">3 ways</p>
+          <p class="green">3 ways</p>
           <p>"Inline"</p>
           <p>"Embedded"</p>
           <p>"External"</p>
@@ -309,7 +309,7 @@ p {
         <!-- Inline -->
         <section>
           <h3>Connecting CSS to HTML: Inline</h3>
-<pre><code class = "html">
+<pre><code class="html">
   &lt;p style="color:red">Some text.&lt;/p>
 </code></pre>
           <p>Uses the HTML attribute style.</p>
@@ -320,7 +320,7 @@ p {
         <!-- Embedded -->
         <section>
           <h3>Connecting CSS to HTML: Embedded</h3>
-<pre><code class = "html">
+<pre><code class="html">
 &lt;head>
   &lt;style type="text/css">
     p {
@@ -338,7 +338,7 @@ p {
         <!-- External-->
         <section>
           <h3>Connecting CSS to HTML: Linked</h3>
-<pre><code class = "html">
+<pre><code class="html">
 &lt;head>
   &lt;link rel="stylesheet" type="text/css" href="style.css">
 &lt;/head>
@@ -364,7 +364,7 @@ p {
         <section>
           <h3>Cascading</h3>
           <p>Styles "cascade" down until changed</p>
-<pre><code class = "html">
+<pre><code class="html">
 p{
   color:blue;
   font-family: 'Helvetica';
@@ -377,11 +377,11 @@ p{
 }
 </code></pre>
 
-<pre><code class = "html">
+<pre><code class="html">
   &lt;p>Paragraph&lt;/p>
-  &lt;p class ="green">Paragraph&lt;/p>
-  &lt;p class ="red">Paragraph&lt;/p>
-  &lt;p class = "red" id ="special">Paragraph&lt;/p>
+  &lt;p class="green">Paragraph&lt;/p>
+  &lt;p class="red">Paragraph&lt;/p>
+  &lt;p class="red" id="special">Paragraph&lt;/p>
 </code></pre>
         </section>
       
@@ -397,14 +397,14 @@ p{
             <li>width</li>
             <li>height</li>
           </ul>
-          <p><a href = "https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference">Comprehensive list of all CSS properties</a></p>
+          <p><a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference">Comprehensive list of all CSS properties</a></p>
         </section>
         
        <!-- Question-->
         <section>
           <h2>Questions?</h2>
-          <div style = "font-size:1200%; height:100%; margin-top:30%" class ="blue">?
-            <div class ="clear"></div></div>
+          <div style="font-size:1200%; height:100%; margin-top:30%" class="blue">?
+            <div class="clear"></div></div>
         </section>
       </div>
       
