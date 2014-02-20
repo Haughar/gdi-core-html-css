@@ -1,0 +1,57 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+
+}
+a:link, a:visited {
+	color: purple;
+}
+a:hover, a:focus {
+	color: green;
+}
+.container {
+	border: 1px solid #ccc;
+	margin: 10px auto;
+	width: 960px;
+}
+header {
+	background-color: purple;
+	color: white;
+	padding: 25px;
+}
+	header h1 {
+		text-align: center;
+	}
+
+section {
+	border-top: 5px solid black;
+	padding: 10px;
+}
+	section article {
+		width: 60%;
+	}
+		.captioned-image {
+			border: 1px solid black;
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+			.captioned-image img {
+				padding: 5px;
+			}
+			.captioned-image p {
+				background-color: black;
+				color: white;
+				margin: 0;
+				padding: 2px;
+			}
+	section sidebar {
+		width: 39%;
+	}
+footer {
+	background-color: #333333;
+	color: yellow;
+	padding: 25px;
+}
