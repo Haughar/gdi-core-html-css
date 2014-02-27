@@ -1,0 +1,12 @@
+.captioned-image {
+	position: relative;
+	max-width: 500px;
+}
+.captioned-image p {
+	background-color: black;
+	bottom: 0px;
+	color: white;
+	left: 10px;
+	position: absolute;
+	width: 40%;
+}

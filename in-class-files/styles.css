@@ -17,6 +17,9 @@ a:hover, a:focus {
 	margin: 10px auto;
 	width: 960px;
 }
+.clear {
+	clear: both;
+}
 header {
 	background-color: purple;
 	color: white;
@@ -30,26 +33,34 @@ section {
 	border-top: 5px solid black;
 	padding: 10px;
 }
-	section article {
+	.primary-column {
+		float: right;
 		width: 60%;
 	}
-		.captioned-image {
-			border: 1px solid black;
-			display: inline-block;
-			margin-bottom: 20px;
-		}
-			.captioned-image img {
-				padding: 5px;
-			}
-			.captioned-image p {
-				background-color: black;
-				color: white;
-				margin: 0;
-				padding: 2px;
-			}
-	section sidebar {
+	.secondary-column {
+		float: left;
 		width: 39%;
 	}
+
+	.captioned-image {
+		border: 1px solid black;
+		position: relative;
+		max-width: 500px;
+		margin-bottom: 20px;
+	}
+		.captioned-image img {
+			padding: 5px;
+		}
+		.captioned-image p {
+			background-color: black;
+			bottom: 0px;
+			color: white;
+			left: 10px;
+			margin: 0;
+			padding: 2px;
+			position: absolute;
+			width: 40%;
+		}
 footer {
 	background-color: #333333;
 	color: yellow;
