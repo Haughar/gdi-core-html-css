@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Class 1 ~ HTML/CSS ~ Girl Develop IT</title>
+		<title>Class 1 ~ Intro to HTML &amp; CSS ~ Girl Develop It</title>
 
 		<meta name="description" content="This is the official Girl Develop It Core HTML/CSS curriculum. It was developed through the contributions of Pamela Fox, Alexis Goldstein, Erin M. Kidwell, Izzy Johnston, and Jen Myers.
 
@@ -14,20 +14,35 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="reveal/css/reveal.css">
-		<link rel="stylesheet" href="reveal/css/theme/gdidefault.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="css/custom.css">
 
-		<!-- For syntax highlighting -->
-		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
-		<!-- dark editor--><link rel="stylesheet" href="reveal/lib/css/dark.css">
+    <!-- For syntax highlighting -->
+    <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+    <!-- dark editor--><link rel="stylesheet" href="lib/css/dark.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If use the PDF print sheet so students can print slides-->
-		
-		<link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+    <link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+    <!-- If use the PDF print sheet so students can print slides-->
+
+    <link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
 	</head>
 
 	<body>
@@ -38,9 +53,9 @@
 			<div class="slides">
 			  <!-- Opening slide -->
         <section>
-          <img src="images/gdi_logo_badge.png">
-          <h3>Beginning HTML and CSS</h3>
-          <h4>Class 1</h4>
+          <img src="img/circle-gdi-logo.png" alt="Girl Develop It" class="noborder" style="max-height: 300px;">
+          <h1 style="font-size: 2.5em;">Intro to HTML &amp; CSS</h1>
+          <h2>Class 1</h2>
         </section>
         
         <!-- Welcome-->
@@ -65,8 +80,10 @@
           <ul>
             <li>Who are you?</li>
             <li>What do you hope to get out of the class?</li>
-            <li>What is your favorite dinosaur?</li>
-            <img src="images/dinosaur.jpeg" />
+            <li>What is your favorite animal?</li>
+            <div style="text-align: center;">
+              <img src="img/rainier-sleeping.jpg" alt="Rainier the puppy" style="max-height: 360px;" />
+            </div>
           </ul>
           </div>
         </section>
@@ -75,13 +92,13 @@
         <section>
           <h3>What is HTML?</h3>
           <p>HTML is the code that allows us to build websites</p>
-          <img src="images/homepage-view.png">
+          <img src="img/homepage-view.png" alt="Homepage design">
         </section>
         
         <section>
           <h3>What is HTML?</h3>
           <p>If you 'view the source', you see this</p>
-          <img src="images/homepage-html.png">
+          <img src="img/homepage-html.png" alt="View source of an HTML page">
         </section>
         
         <!-- History of HTML-->
@@ -102,7 +119,8 @@
             <li class="fragment">Early 90s</li>
             <li class="fragment">HTML 4 in 1997</li>
             <li class="fragment">XHTML in 2000</li>
-            <li class="fragment">HTML 5 in 2008</li>
+            <li class="fragment">HTML5 First Working Draft in 2008</li>
+            <li class="fragment">HTML5 Stable Recommendation 2014</li>
           </ul>
         </section>
         
@@ -133,41 +151,39 @@
         <!-- <section>
           <h3>Clients and servers</h3>
           <p>How your computer accesses websites</p>
-          <img src="images/client-server.png"/>
+          <img src="img/client-server.png"/>
         </section> -->
         
         <!-- Nitty gritty 2 - Tools -->
         <section>
           <h3>Tools</h3>
           <ul>
-            <li>
-              <div class="yellow">Browser</div>
-              <div>Chrome</div>
-              <div>Firefox</div>
+            <li style="margin-bottom: 0.5em;">
+              <strong>Browsers:</strong><br>
+              Chrome, Firefox, Safari, IE/Edge
+             </li>
+             <li style="margin-bottom: 0.5em;">
+              <strong>Text Editors:</strong><br>
+              Sublime Text - Mac, Windows, Linux<br>
+              Atom - Mac, Windows, Linux<br>
+              Notepad++ - Windows<br>
+              gedit - Linux
              </li>
              <li>
-              <div class="yellow">Development Toolkit</div>
-              <div>Chrome - Inspector</div>
-              <div>Firefox - Firebug</div>
-             </li>
-             <li>
-              <div class="yellow">Text Editor</div>
-              <div>TextWrangler - Mac</div>
-              <div>Notepad ++ - Windows</div>
-              <div>Sublime Text - Linux, Mac or Windows</div>
-              <div>gedit - Linux</div>
+              <strong>Developer Tools:</strong><br>
+              Chrome, Firefox, Safari, IE
              </li>
           </ul>
         </section>
        <!-- Commenting out sublime text intro so teachers can choose whether or not to use sublime text in class-->
          <!-- intro to sublime text 2 -->
 
-        <!-- <section>
-          <h3>Get Started: Sublime Text 2</h3>
+        <section>
+          <h3>Get Started: Sublime Text</h3>
           <p class="left"><strong>We'll be using Sublime Text 2 in class today.</strong></p>
           <ol>
             <li>
-              <p>Download ST2 from www.sublimetext.com/2</p>
+              <p>Download ST2 from <a href="http://www.sublimetext.com/2" target="_blank">www.sublimetext.com/2</a></p>
             </li>
             <li>
               <p>Turn off Auto Correct &amp; Tab Completion<br/></p>
@@ -178,7 +194,7 @@
               </ul>
             </li>
           </ol>
-        </section> -->
+        </section>
         <!-- Folder Structure -->
          <section>
           <h3>Get Started: Folder Structure</h3>
@@ -196,7 +212,7 @@
           <p class="left-align"><small>Note: File names should not include spaces or special characters. File names ARE case sensitive.</small></p>
           </div>
           <div class="right" style="width: 45%;">
-            <img src="images/folderstructure1.png" />
+            <img src="img/folderstructure1.png" alt="Folder structure" />
           </div>
         </section>
         <!-- Example of site we'll be making-->
@@ -206,7 +222,7 @@
         		<p>Today we will be learning how to code a site from scratch using paragraphs, headings, links, images, and lists.</p>
         	</div>
         	<div class="right" style="width: 45%;">
-        		<img src="images/session1site.png"/>
+        		<img src="img/session1site.png" alt="Basic webpage" />
         	</div>
         </section>
 
@@ -264,7 +280,7 @@
         <!--anatomy of a tag -->
         <section>
         	<h3>Tag Breakdown</h3>
-        	<img src="images/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none;" />
+        	<img src="img/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none;" />
         </section>
         <section>
          <h3>Anatomy of an HTML element</h3>
@@ -320,12 +336,12 @@
         <h3>Doctype</h3>
         <p>The ﬁrst thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
         <pre><code class="html">
+          &lt;!DOCTYPE html>
+        </code></pre>
+        <pre><code class="html">
           &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML
           4.01 Transitional//EN" "http://
           www.w3.org/TR/html4/loose.dtd">
-        </code></pre>
-        <pre><code class="html">
-          &lt;!DOCTYPE html>
         </code></pre>
         <p><small>* The doctype is case-insensitive. <br/>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
         </section>
@@ -352,7 +368,7 @@
         <!--example of head and body tags-->
         <section>
         	<h3>Head and Body Tags: Example</h3>
-        	<img src="images/example-headbody.png" alt="example of head and body" />
+        	<img src="img/example-headbody.png" alt="example of head and body" />
         </section>
         <section>
           <h3>Head and Body Tags</h3>
@@ -371,7 +387,7 @@
         
         <!-- Develop it -->
         <section class="hide-pdf">
-        	<h3>Let's develop it!</h3>
+        	<h3>Let's Develop It!</h3>
         	<p>Let's get our web page set up with a doctype, head, title and body.</p>
         	<p>Later we'll add some content to it!</p>
         </section>       
@@ -380,7 +396,7 @@
           <h3>Nesting</h3>
           <p>All elements "nest" inside one another</p>
           <p><small>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
-          <img src="images/owls.jpg"/>
+          <img src="img/owls.jpg"/>
           
           <p>Whichever element OPENS first CLOSES last</p>
         </section>
@@ -439,7 +455,7 @@
         <section>
         	<h3>Example: Paragraphs</h3>
         	<p>Paragraphs allow you to format your content in a readable fashion.</p>
-        	<img src="images/example-paragraphs.png" alt="Example of Paragraphs in the wild" />
+        	<img src="img/example-paragraphs.png" alt="Example of Paragraphs in the wild" />
         	<p><small>* You can edit how paragraphs are displayed with CSS</small></p>
         </section>
         
@@ -473,20 +489,21 @@
         <!--heading examples-->
         <section>
         	<h3>Example: Headings</h3>
-        	<img src="images/example-headings.png" alt="Example of headings" />
+        	<img src="img/example-headings.png" alt="Example of headings" />
         </section>
         <!-- Em and Strong-->
         <section>
           <h3>Formatted text</h3>
           <div>
-          <div class="left" style="width:50%">
+          <div>
 <pre><code>
 &lt;p>
-  Here is a paragraph with &lt;em>Emphasized&lt;/em> text and &lt;strong>Important&lt;/strong> text.
+  Here is a paragraph with &lt;em>Emphasized&lt;/em> 
+  text and &lt;strong>Important&lt;/strong> text.
 &lt;/p>
 </code></pre>
           </div>
-          <div class="left left-align" style="width:50%">
+          <div>
             <p>
               Here is a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.
             </p>
@@ -494,7 +511,7 @@
           <div class="clear"></div>
           <br/>
           <br/>
-          <p>* Notice: em and strong are meant to indicate meaning through style. If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</p>
+          <p>* Notice: <code>em</code> and <code>strong</code> are meant to indicate meaning through style. If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</p>
           </div>
         </section> 
 <!--develop it!-->
@@ -511,15 +528,18 @@
           <h3>Element: Link</h3>
           <p>Links have three components</p>
           <ul>
-            <li>Tag: &lt;a>&lt;/a></li>
-            <li>Href attribute: "http://www.girldevelopit.com"</li>
-            <li>Title attribute: "Girl Develop It"</li>
+            <li>Tag: <code>&lt;a>&lt;/a></code></li>
+            <li><code>href</code> attribute: "http://www.girldevelopit.com"</li>
+            <li><code>title</code> attribute: "Girl Develop It"</li>
           </ul>
 <pre><code>
-&lt;a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI&lt;/a>
+&lt;a href="http://www.girldevelopit.com" 
+   title="Girl Develop It Homepage">
+  GDI
+&lt;/a>
 </code></pre>
         <p><a href="http://www.girldevelopit.com" title="Girl Develop It Homepage">GDI</a></p>
-        <p>The &lt;a&gt; tag surrounds text or images to turn them into links</p>
+        <p>The <code>&lt;a&gt;</code> tag surrounds text or images to turn them into links</p>
         </section>
         
         <!-- Link Attributes -->
@@ -529,12 +549,12 @@
         	<pre><code>
 &lt;a href="home.html" target="_blank">Link Text&lt;/a>
         	</code></pre>
-        	<p><small>Link opens in a new window/tab with <strong>target="_blank"</strong></small></p>
+        	<p><small>Link opens in a new window/tab with <code>target="_blank"</code></small></p>
         	<!-- Change email to fit your chapter's needs-->
         	<pre><code>
 &lt;a href="mailto:info@girldevelopit.com">E-mail us!&lt;/a>
         	</code></pre>
-        	<p><small>Link opens mail program by inserting <strong>mailto:</strong> directly before the email address.</small></p>
+        	<p><small>Link opens mail program by inserting <code>mailto:</code> directly before the email address.</small></p>
 
         </section>
         <!-- relative & absolute links -->
@@ -547,7 +567,7 @@
         				<li>Relative paths change depending upon the page the link is on.
         					<ul>
         						<li><small>Links within the same directory need no path information. <code class="blue">"filename.jpg"</code></small></li>
-        						<li><small>Subdirectories are listed without preceding slashes. <code class="blue">"images/filename.jpg"</code></small></li>
+        						<li><small>Subdirectories are listed without preceding slashes. <code class="blue">"img/filename.jpg"</code></small></li>
         					</ul>
         				</li>
         			</ul>
@@ -574,14 +594,14 @@
           <h3>Element: Image</h3>
           <p>Images have three components</p>
           <ul>
-            <li>Tag: &lt;img/></li>
-            <li>Src attribute: "http://girldevelopit.com/assets/pink-logo.png"</li>
-            <li>Alt attribute: "Girl Develop It logo"</li>
+            <li>Tag: <code>&lt;img/></code></li>
+            <li><code>src</code> attribute: "img/circle-gdi-logo.png"</li>
+            <li><code>alt</code> attribute: "Girl Develop It"</li>
           </ul>
 <pre><code>
-&lt;img src="http://girldevelopit.com/assets/pink-logo.png" alt="Girl Develop It Logo"/>
+&lt;img src="img/circle-gdi-logo.png" alt="Girl Develop It"/>
 </code></pre>
-<img src="http://girldevelopit.com/assets/pink-logo.png" alt="Girl Develop It Logo"/>
+<img src="img/circle-gdi-logo.png" alt="Girl Develop It" style="max-height: 200px;" />
           <p><small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small></p>
 
         </section>
@@ -592,18 +612,18 @@
           <div class="left" style="width:50%">
 <pre><code>
 &lt;p>
-  Imagine there's no Heaven &lt;br/>
-  It's easy if you try &lt;br/>
-  No hell below us  &lt;br/>
+  Imagine there's no Heaven &lt;br>
+  It's easy if you try &lt;br>
+  No hell below us  &lt;br>
   Above us only sky
 &lt;/p>
 </code></pre>
           </div>
           <div class="left left-align" style="width:50%">
             <p>
-            Imagine there's no Heaven <br/>
-            It's easy if you try <br/>
-            No hell below us  <br/>
+            Imagine there's no Heaven <br>
+            It's easy if you try <br>
+            No hell below us  <br>
             Above us only sky
             </p>
           </div>
@@ -659,7 +679,7 @@
         <section>
         	<h3>Lists: Examples</h3>
         	<p>Lists can be used to organize any list of items.</p>
-        	<img src="images/example-lists.png" alt="Examples of lists"/>
+        	<img src="img/example-lists.png" alt="Examples of lists"/>
         	<p><small>You'd be surprised how often lists are used in web design.</small></p>
         </section>
         
@@ -731,7 +751,7 @@
         <section>
         	<h3>Tables: Examples</h3>
         	<p>Tables can be styled with CSS to add zebra striping or to highlight important rows/columns.</p>
-        	<img src="images/example-tables.png" alt="Example of tables" />
+        	<img src="img/example-tables.png" alt="Example of tables" />
         </section>
 
         
@@ -741,21 +761,21 @@
           <p>There are character codes for many different characters in many different languages</p>
           <div class="left" style="width:50%">
           <ul>
-            <li>Delta: &amp;delta; &delta;</li>
-            <li>Copyright symbol: &amp;copy; &copy;</li>
-            <li>Grave: &amp;grave; &grave;</li>
-            <li>An grave a: &amp;agrave; &agrave;</li>
+            <li>Delta: <code>&amp;delta;</code> &delta;</li>
+            <li>Copyright symbol: <code>&amp;copy;</code> &copy;</li>
+            <li>Grave: <code>&amp;grave;</code> &grave;</li>
+            <li>An grave a: <code>&amp;agrave;</code> &agrave;</li>
             <li>A full list is available at <a href="http://htmlandcssbook.com/extras/html-escape-codes/" target="_blank">htmlandcssbook.com</a></li>
           </ul>
           </div>
           <div class="right" style="width: 50%;">
-          	<img src="images/example-characters.png" alt="Example of Characters"/>
+          	<img src="img/example-characters.png" alt="Example of Characters"/>
           </div>
           
         </section>        <!-- -->
         <section>
           <h2>Questions?</h2>
-          <div style="font-size:1200%; height:100%; margin-top:40%" class="blue">?
+          <div style="font-size:1200%; height:100%; margin-top:20%" class="blue">?
             <div class="clear"></div></div>
         </section>
 			</div>
@@ -767,34 +787,32 @@
       </footer>
 		</div>
 
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
-		<script src="reveal/lib/js/head.min.js"></script>
-		<script src="reveal/js/reveal.min.js"></script>
+    <script>
 
-		<script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
-
-		</script>
-
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
 	</body>
 </html>
