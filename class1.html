@@ -240,15 +240,15 @@
           <h3>Anatomy of a website</h3>
           <div class="yellow"> Concrete example</div>
           <ul>
-            <li class="fragment"><p>A paragraph is your content</p></li>
+            <li class="fragment"><p>A paragraph is your content.</p></li>
             <li class="fragment">
-              <div style="font-size: 80%">Putting your content into an HTML tag to make it look like a paragraph is Structure</div>
+              <p>Putting your content into an HTML tag to make it look like a paragraph is Structure.</p>
               <pre><code class="html">
                 &lt;p>A paragraph is your content&lt;/p>
               </code></pre>
           </li>
           <li class="fragment">
-            <div style="font-size: 80%">Make the font of your paragraph blue and 18pt is presentation</div>
+            <p>Making the font of your paragraph blue and 18pt is presentation.</p>
             <p class="blue">A paragraph is your content</p>
           </li>
         </section>
@@ -322,8 +322,8 @@
 					<li>Value is the value assigned to a given attribute.</li>
 					<li>Values must be contained inside quotation marks.</li>
 					<li>
-<pre><code class="html">&lt;div id="copyright">&copy; GDI 2013&lt;/div>
-&lt;img src="my_picture.jpg" /> 
+<pre><code class="html">&lt;div id="copyright">&copy; GDI 2016&lt;/div>
+&lt;img src="my_picture.jpg" alt="alt text" /> 
 &lt;a href="http://girldevelopit.com">GDI&lt;/a>
 </code></pre>
               </li>
@@ -348,8 +348,8 @@
         
         <section>
           <h3>HTML Tag</h3>
-          <p>After &lt;doctype>, the page content must be
-          contained between &lt;html> tags.</p>
+          <p>After <code>&lt;doctype></code>, the page content must be
+          contained between <code>&lt;html></code> tags.</p>
           <pre><code class="html">
             &lt;!DOCTYPE html>
             &lt;html>
@@ -361,8 +361,8 @@
         <section>
           <h3>Head and Body Tags</h3>
           <div class="left-align">
-            <p class="fragment"><span class="green">Head:</span> The head contains the title of the page &amp; meta information about the page. Meta information is not visible to the user, but has many purposes One of which is to tell search engines about your page, who created it, and a description. </p>
-            <p class="fragment"><span class="green">Body:</span> The body contains the actual content of the page. Everything that is contained in the body is visible to the user.</p>
+            <p class="fragment"><code>&lt;head></code> The head contains the title of the page &amp; meta information about the page. Meta information is not visible to the user, but has many purposes One of which is to tell search engines about your page, who created it, and a description. </p>
+            <p class="fragment"><code>&lt;body></code> The body contains the actual content of the page. Everything that is contained in the body is visible to the user.</p>
           </div>
         </section>
         <!--example of head and body tags-->
@@ -395,7 +395,7 @@
         <section>
           <h3>Nesting</h3>
           <p>All elements "nest" inside one another</p>
-          <p><small>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p> inside of the &lt;body> tags. The &lt;p> is now nested inside the &lt;body></small></p>
+          <p><small>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the <code>&lt;p></code> inside of the <code>&lt;body></code> tags. The <code>&lt;p></code> is now nested inside the <code>&lt;body></code></small></p>
           <img src="img/owls.jpg"/>
           
           <p>Whichever element OPENS first CLOSES last</p>
@@ -575,7 +575,7 @@
         		<li>
         			<strong class="blue">Absolute</strong>
     				<ul>
-    					<li>Absolute paths refer to a specific location of a file, including the domain. <small><code class="blue">"http://www.girldevelopit.com/chapters/detroit"</code></small></li>
+    					<li>Absolute paths refer to a specific location of a file, including the domain. <small><code class="blue">"http://www.girldevelopit.com/chapters/seattle"</code></small></li>
     					</li>
     					<li>Typically used when pointing to a link that is not within your own domain.</li>
     				</ul>
@@ -699,7 +699,7 @@
         	<p><small>Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</small></p>
         	<pre><code>
 &lt;!-- Beginning of header -->
-   &lt;div id="header">Header Content &lt;/div>
+   &lt;h1>Header Content&lt;/h1>
 &lt;!-- End of header -->
 
 &lt;!--   

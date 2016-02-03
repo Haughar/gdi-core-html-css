@@ -94,7 +94,7 @@
         <section>
           <h3>CSS: What can it do?</h3>
           <p>All colored text, position, and size</p>
-          <img src="img/homepage-view.png" alt="Homepage example">
+          <img src="img/homepage-view2.png" alt="Homepage example">
         </section>
         
         <section>
@@ -114,12 +114,12 @@ selector {
   property: value;
 }
 </code></pre>
-          <div class="left-align">
-            <p>A block of CSS code is a rule.</p>
-            <p>The rule starts with a selector.</p>
-            <p>It has sets of properties and values.</p>
-            <p>A property-value pair is a declaration.</p>
-          </div>
+          <ul class="left-align">
+            <li>A block of CSS code is a <strong>rule</strong>.</li>
+            <li>The rule starts with a <strong>selector</strong>.</li>
+            <li>It has sets of <strong>properties</strong> and <strong>values</strong>.</li>
+            <li>A property-value pair is a <strong>declaration</strong>.</li>
+          </ul>
         </section>
         
         <!-- CSS Syntax -->
@@ -127,16 +127,13 @@ selector {
           <h3>CSS Syntax</h3>
           <div class="left-align">
             <p>Declarations:  Property and value of style you plan use on HTML element. </p>
-          <p>Declarations end with a semicolon</p>
-          <p>Declaration groups are surrounded by curly brackets.</p>
+            <p>Declarations end with a semicolon;</p>
+            <p>Declaration groups are surrounded by curly brackets.</p>
           </div>
           
 <pre><code class="html">
-selector {
   property: value;
-  property: value;
-  property: value;
-}
+
 </code></pre>
         </section>
 
@@ -144,47 +141,53 @@ selector {
         <section>
 			  <h3>Selector: Element</h3>
 <pre><code class="css">
-p {
-  property: value;
-}
+  p {
+    
+  }
+
 </code></pre>
       <p>Selects all paragraph elements.</p>
 <pre><code class="css">
-img {
-  property: value;
-}
+  img {
+    
+  }
+
 </code></pre>
         <p>Selects all image elements.</p>
         </section>
         
         <!-- Selectors ID-->
         <section>
-			    <h3>Selector: ID</h3>
+			    <h3>Selector: ID #</h3>
 <pre><code class="css">
-#footer {
-  property: value;
-}
+  #footer {
+   
+  }
+
 </code></pre>
-          <p>Selects all elements with an id of "footer".</p>
+          <p>CSS: Select all elements with an <strong>id</strong> of "footer".</p>
           
 <pre><code class="html">
-&lt;p id="footer">Copyright 2011&lt;/p>
+  &lt;p id="footer">Copyright 2016&lt;/p>
+
 </code></pre>
          <p>The associated HTML.</p>
 			  </section>
         
         <!-- Selectors Class-->
         <section>
-			    <h3>Selector: Class</h3>
+			    <h3>Selector: Class .</h3>
 <pre><code class="css">
-.warning {
-  color: red;
-}
+  .warning {
+    
+  }
+
 </code></pre>
-          <p>Selects all elements with a class of "warning".</p>
+          <p>CSS: Select all elements with a <strong>class</strong> of "warning".</p>
 
 <pre><code class="html">
-&lt;p class="warning">Run away!&lt;/p>
+  &lt;p class="warning">Run away!&lt;/p>
+
 </code></pre>
          <p>The associated HTML.</p>
 			  </section>
@@ -193,11 +196,11 @@ img {
         <section>
         <h3>IDs vs. Classes</h3>
         <div class="left-align">
-          <span class="blue">ID</span> -- Should only apply to one element on a webpage. I.E. A webpage only has one footer.
+          <span class="blue">ID</span> -- Should only apply to one element on a webpage. i.e. A webpage only has one footer.
           <p>The "#" is how you tell CSS "this is an id."</p>
         </div>
         <div class="left-align">
-          <span class="blue">Class</span> -- Lots of elements can have the same class. I.E. There can be many warning on one webpage.
+          <span class="blue">Class</span> -- Multiple elements can have the same class. I.E. There can be many warning on one webpage.
           <p>The "." is how you tell CSS "this is a class name."</p>
         </div>
       </section>  
@@ -205,201 +208,78 @@ img {
         <!-- Selector position-->
         <section>
         <h3>Selector: Position</h3>
-<pre><code class="html">
-p em {
-  color: yellow;
-}
+<pre><code class="css">
+  p em {
+    color: yellow;
+  }
+
 </code></pre>
-       <p>Selects all <code>em</code> elements that are within a paragraph</p>
+       <p>CSS: Select all <code>em</code> elements within a paragraph</p>
 <pre><code class="html">
-&lt;p>This is &lt;em>important.&lt;/em>&lt;/p>
+  &lt;p>This is &lt;em>important.&lt;/em>&lt;/p>
+
 </code></pre>
         <p>The associated HTML.</p>
+      </section>
+
+        <!-- Selector position-->
+        <section>
+        <h3>Selector: ID + Children</h3>
+<pre><code class="css">
+  #global-nav ul li {
+    display: inline-block;
+    list-style: none;
+  }
+
+</code></pre>
+       <p>CSS: Select all <code>li</code> elements within the global nav.</p>
+<pre><code class="html">
+  &lt;nav id="global-nav">
+    &lt;ul>
+      &lt;li>Home&lt;/li>
+      &lt;li>About&lt;/li>
+    &lt;/ul>
+  &lt;/nav>
+
+</code></pre>
+        <p>The associated HTML.</p>
+      </section>
+
+        <!-- Selector position-->
+        <section>
+        <h3>Selector: Class</h3>
+<pre><code class="css">
+  a.pdf {
+    background: url(img/pdf-icon.png) no-repeat right center;
+    background-size: auto 100%;
+    display: inline-block;
+    padding-right: 25px;
+  }
+
+</code></pre>
+       <p>CSS: Select all <code>a</code> elements with the <strong>pdf class</strong>.</p>
+<pre><code class="html">
+  &lt;a href="resume.pdf" class="pdf">Resume&lt;/a>
+  
+</code></pre>
+        <p>The associated HTML.</p>
+        <p><a href="http://codepen.io/marcysutton/pen/zrLVyx">Codepen Example</a></p>
       </section>
         
         <!-- Multiple values -->
         <section>
         <h3>Property Values</h3>
         <p>Each property can have one or more comma separated values.</p>
-<pre><code class="html">
-p{
-  color: white;
-  background-color: red;
-  font-family: Arial, sans-serif;
-}
+<pre><code class="css">
+  p {
+    color: white;
+    background-color: red;
+    font-family: Arial, sans-serif;
+  }
+
 </code></pre>
       </section>
-        
-        <!-- Color-->
-        <section>
-          <h3>Property: Color</h3>
-          <p>The color property changes the color of the text.</p>
-<pre><code class="html">
-p {
-  color: red;
-  color: #ff0000;
-  color: rgb(255, 0, 0);
-}
-</code></pre>
-        <p>Color name</p>
-        <p>Hexadecimal value</p>
-        <p>RGB value</p>
-        <p>Some of the many standard colors are: <font color="aqua" style="background:black;">aqua</font>, black, <font color="blue">blue</font>, <font color="fuchsia">fuchsia</font>, <font color="gray">gray</font>, <font color="grey">grey</font>, <font color="green">green</font>, <font color="lime">lime</font>, <font color="maroon">maroon</font>, <font color="navy">navy</font>, <font color="olive">olive</font>, <font color="purple">purple</font>, <font color="red">red</font>, <font color="silver" style="background:black;">silver</font>, <font color="teal">teal</font>, <font color="white" style="background:black;">white</font>, and <font color="yellow" style="background:black;">yellow</font>.</p>
-        <p><a href="http://www.crockford.com/wrrrld/color.html">See all named colors</a></p>
-        </section>
-        
-        <!-- Background color-->
-        <section>
-          <h3>Property: Background-color</h3>
-          <p>The background-color property changes the color of the background.</p>
-<pre><code class="html">
-p {
-  background-color: black;
-  background-color: #000000;
-  background-color: rgb(0,0,0);
-}
-</code></pre>
-        </section>
-      
-        <!-- Font family-->
-        <section>
-          <h3>Property: Font-family</h3>
-          <p>The font-family property deﬁnes which font is used.</p>
-<pre><code class="html">
-p {
-  font-family: "Times New Roman";
-  font-family: serif;
-  font-family: "Arial", sans-serif;
-}
-</code></pre>
-          <p>Specific font name</p>
-          <p>Generic name</p>
-          <p>Comma-separated list</p>
-        </section>
-      
-        <!-- Font size -->
-        <section>
-          <h3>Property: Font-size</h3>
-          <p>The font-size property speciﬁes the size of the font.</p>
-<pre><code class="html">
-p {
-  font-size: 12px;
-  font-size: 1.5em;
-  font-size: 100%;
-}
-</code></pre>
-          <p>Pixels</p>
-          <p>"em"</p>
-          <p>Percentage</p>
-        </section>
-        
-        <!-- Fonts-->
-        <section>
-          <h3>Property: Fonts (shorthand)</h3>
-<pre><code class="html">
-p {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 10px;
-  font-family: sans-serif;
-}
-</code></pre>
-          OR
-<pre><code class="html">
-p {
-  font: italic bold 10px sans-serif;
-}
-</code></pre>
-        </section>
-      
-        <!-- Connecting HTML to CSS-->
-        <section>
-          <h3>Connecting CSS to HTML</h3>
-          <p class="green">3 ways</p>
-          <p>Inline</p>
-          <p>Embedded</p>
-          <p>External</p>
-        </section>
-      
-        <!-- Inline -->
-        <section>
-          <h3>Connecting CSS to HTML: Inline</h3>
-<pre><code class="html">
-  &lt;p style="color:red">Some text.&lt;/p>
-</code></pre>
-          <p>Uses the HTML attribute <code>style</code>.</p>
-          <p>Difficult to use in large projects</p>
-          <p>Not preferred.</p>
-        </section>
-        
-        <!-- Embedded -->
-        <section>
-          <h3>Connecting CSS to HTML: Embedded</h3>
-<pre><code class="html">
-&lt;head>
-  &lt;style type="text/css">
-    p {
-      color: blue;
-      font-size: 12px;
-    }
-  &lt;/style>
-&lt;/head>
-</code></pre>
-          <p>Inside <code>&lt;head></code> element.</p>
-          <p>Uses <code>&lt;style></code> tag.</p>
-          <p>Can only be used in one html file</p>
-        </section>
-        
-        <!-- External-->
-        <section>
-          <h3>Connecting CSS to HTML: Linked</h3>
-<pre><code class="html">
-&lt;head>
-  &lt;link rel="stylesheet" type="text/css" href="style.css">
-&lt;/head>
-</code></pre>
-          <p>Shared resource for several pages.</p>
-          <p>Reduced ﬁle size &amp; bandwidth</p>
-          <p>Easy to maintain in larger projects.</p>
-          <p>Preferred by nerds everywhere!</p>
-        </section>
-      
-        <!-- Exercise-->
-        <section class="hide-pdf">
-          <h3>Let's Develop It</h3>
-          <ul>
-            <li>Create a new .css file</li>
-            <li>Add a link to the file in the head of the portfolio made last time</li>
-            <li>Add styles to change the colors, background colors or fonts of different parts of </li>
-            <li>Try using ids and classes to change specific elements</li>
-          </ul>
-        </section>
-        
-        <!-- Cascading-->
-        <section>
-          <h3>Cascading</h3>
-          <p>Styles "cascade" down until changed</p>
-<pre><code class="html">
-p {
-  color: blue;
-  font-family: Helvetica;
-}
-.red {
-  color: red;
-}
-#special {
-  font-family: Arial;
-}
-</code></pre>
 
-<pre><code class="html">
-  &lt;p>Paragraph&lt;/p>
-  &lt;p class="green">Paragraph&lt;/p>
-  &lt;p class="red">Paragraph&lt;/p>
-  &lt;p class="red" id="special">Paragraph&lt;/p>
-</code></pre>
-        </section>
-      
         <!-- Properties-->
         <section>
           <h3>CSS Properties</h3>
@@ -413,6 +293,239 @@ p {
             <li>height</li>
           </ul>
           <p><a href="https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference">Comprehensive list of all CSS properties</a></p>
+        </section>
+        
+        <!-- Color-->
+        <section>
+          <h3>Property: Color</h3>
+          <p>The <code>color</code> property changes the color of the text.</p>
+<pre><code class="css">
+  p {
+    color: red;
+  }
+
+</code></pre>
+        <p>Color name: <code>red</code></p>
+        <p>Hexadecimal value: <code>#ff0000</code></p>
+        <p>RGB value: <code>rgb(255,0,0)</code></p>
+        <p>Some of the many standard colors are: <font color="aqua" style="background:black;">aqua</font>, black, <font color="blue">blue</font>, <font color="fuchsia">fuchsia</font>, <font color="gray">gray</font>, <font color="grey">grey</font>, <font color="green">green</font>, <font color="lime">lime</font>, <font color="maroon">maroon</font>, <font color="navy">navy</font>, <font color="olive">olive</font>, <font color="purple">purple</font>, <font color="red">red</font>, <font color="silver" style="background:black;">silver</font>, <font color="teal">teal</font>, <font color="white" style="background:black;">white</font>, and <font color="yellow" style="background:black;">yellow</font>.</p>
+        <p><a href="http://www.crockford.com/wrrrld/color.html">See all named colors</a></p>
+        </section>
+        
+        <!-- Background color-->
+        <section>
+          <h3>Property: Background-color</h3>
+          <p>The <code>background-color</code> property changes the color of the background.</p>
+<pre><code class="css">
+  p {
+    background-color: black;
+  }
+
+</code></pre>
+        <p>Color name: <code>black</code></p>
+        <p>Hexadecimal value: <code>#000000</code></p>
+        <p>RGB value: <code>rgb(0,0,0)</code></p>
+        </section>
+      
+        <!-- Font family-->
+        <section>
+          <h3>Property: Font-family</h3>
+          <p>The <code>font-family</code> property deﬁnes which font is used.</p>
+<pre><code class="css">
+  p {
+    font-family: "Arial", sans-serif;
+  }
+
+</code></pre>
+          <p>Specific font name</p>
+          <p>Generic name</p>
+          <p>Comma-separated list</p>
+        </section>
+      
+        <!-- Font size -->
+        <section>
+          <h3>Property: Font-size</h3>
+          <p>The <code>font-size</code> property speciﬁes the size of the font.</p>
+<pre><code class="css">
+  p {
+    font-size: 1.5em;
+    font-size: 12px;
+  }
+
+</code></pre>
+          <p>Pixels</p>
+          <p>"em"</p>
+          <p>Percentage</p>
+        </section>
+        
+        <!-- Fonts-->
+        <section>
+          <h3>Property: Fonts (shorthand)</h3>
+<pre><code class="css">
+  p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+
+</code></pre>
+          OR
+<pre><code class="css">
+  p {
+    font: italic bold 10px sans-serif;
+  }
+
+</code></pre>
+        </section>
+      
+        <!-- Connecting HTML to CSS-->
+        <section>
+          <h3>Connecting CSS to HTML</h3>
+          <h4 class="green">3 ways</h4>
+          <ul>
+            <li>Inline</li>
+            <li>Embedded</li>
+            <li>External</li>
+          </ul>
+        </section>
+      
+        <!-- Inline -->
+        <section>
+          <h3>Connecting CSS to HTML: Inline</h3>
+<pre><code class="html">
+  &lt;p style="color:red;">Some text.&lt;/p>
+
+</code></pre>
+          <p>Uses the HTML attribute <code>style</code>.</p>
+          <p>Precise but impossible to override.</p>
+          <p>Difficult to use in large projects.</p>
+        </section>
+        
+        <!-- Embedded -->
+        <section>
+          <h3>Connecting CSS to HTML: Embedded</h3>
+<pre><code class="html">
+  &lt;!DOCTYPE html>
+  &lt;html lang="en">
+    &lt;head>
+      &lt;style type="text/css">
+        p {
+          color: blue;
+          font-size: 12px;
+        }
+      &lt;/style>
+      &lt;title>Page Title&lt;/title>
+    &lt;/head>
+    &lt;body>
+      ...
+
+</code></pre>
+          <p>Inside <code>&lt;head></code> element.</p>
+          <p>Uses <code>&lt;style></code> tag.</p>
+          <p>Can only be used in one HTML file.</p>
+        </section>
+        
+        <!-- External-->
+        <section>
+          <h3>Connecting CSS to HTML: Linked</h3>
+<pre><code class="html">
+ &lt;!DOCTYPE html>
+  &lt;html lang="en">
+    &lt;head>
+      &lt;link rel="stylesheet" type="text/css" href="style.css">
+      ...
+
+</code></pre>
+          <p>Shared resource for several pages.</p>
+          <p>Easy to maintain in larger projects.</p>
+          <p>Preferred by nerds everywhere!</p>
+        </section>
+      
+        <!-- Exercise-->
+        <section class="hide-pdf">
+          <h3>Let's Develop It</h3>
+          <ul>
+            <li>Create a new <code>.css</code> file.</li>
+            <li>Link to the file in the <code>&lt;head></code> of your work-in-progress HTML page.</li>
+            <li>Add styles in the CSS file to change the colors, background colors or fonts of different elements.</li>
+            <li>Try using ids and classes to target specific areas or elements.</li>
+          </ul>
+        </section>
+        
+        <!-- Cascading-->
+        <section>
+          <h3>Cascading</h3>
+          <p>Styles "cascade" down until changed</p>
+<pre><code class="css">
+  p {
+    color: blue;
+    font-family: Helvetica;
+  }
+  .red {
+    color: red;
+  }
+  #special {
+    font-family: SomeSpecialFont;
+  }
+
+</code></pre>
+
+<pre><code class="html">
+  &lt;p>Paragraph&lt;/p>
+  &lt;p class="green">Paragraph&lt;/p>
+  &lt;p class="red">Paragraph&lt;/p>
+  &lt;p class="red" id="special">Paragraph&lt;/p>
+
+</code></pre>
+        </section>
+
+         <!-- Pseudo class-->
+        <section>
+          <h3>Pseudo-classes, more CSS for links</h3>
+          <div class="left left-align" style="width:50%">
+          <p>Changing the style of a link when you hover or focus on it is accomplished by using pseudo-classes.</p>
+          <br/>
+          <p>CSS pseudo-classes are keywords added to selectors that specify special states.</p>
+          </div>
+          <div class="right" style="width:50%">
+          Syntax: 
+<pre><code class="css">
+  selector:pseudo-class {
+    property: value;  
+  }
+
+</code></pre>
+          Example:
+<pre><code class="css">
+  a:hover,
+  a:focus {
+    border-color: #666;
+  }
+
+</code></pre>
+        </div>
+        </section>
+        
+        <!-- Pseudo class-->
+        <section>
+          <h3>Pseudo-classes, more CSS for links</h3>
+<pre><code class="css">
+  a:link    { color: #FF0000; } /* unvisited link */
+  a:visited { color: #00FF00; } /* visited link */
+  a:focus   { color: #FF00FF; } /* keyboard focus */
+  a:hover   { color: #FF00FF; } /* mouse over link */
+  a:active  { color: #0000FF; } /* selected link */
+  
+</code></pre>
+          <p>Note: <code>a:hover</code> MUST come after <code>a:link</code> and <code>a:visited</code> in the CSS definition in order to be effective!</p>
+          <p>Note: <code>a:active</code> MUST come after <code>a:hover</code> in the CSS definition in order to be effective!</p>
+        </section>
+       
+        <!-- Exercise-->
+        <section>
+          <h3>Let's Develop It</h3>
+          <p>Add pseudo classes to your links</p>
         </section>
         
        <!-- Question-->

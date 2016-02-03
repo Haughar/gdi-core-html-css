@@ -144,12 +144,13 @@
         
         <section>
           <h3>Grouping elements with div, cont'd.</h3>
-<pre><code class="html">
-.align-right {
-  text-align: right;
-  color: purple; 
-  font-weight: bold;
-}
+<pre><code class="css">
+  .align-right {
+    text-align: right;
+    color: purple; 
+    font-weight: bold;
+  }
+
 </code></pre>
 
 <pre><code class="html">
@@ -187,14 +188,16 @@
           <h3>Span</h3>
           <p>Span is used to apply a specific style inline</p>
           
-<pre><code class="html">
-.green {
-  color: green;
-}
+<pre><code class="css">
+  .green {
+    color: green;
+  }
+
 </code></pre>
 
 <pre><code class="html">
-&lt;p>Paragraph with &lt;span class="green">green&lt;/span> text.&lt;/p>
+  &lt;p>Paragraph with &lt;span class="green">green&lt;/span> text.&lt;/p>
+
 </code></pre>
 
 <p>Paragraph with <span style="color:green">green</span> text.</p>
@@ -202,55 +205,12 @@
         <!-- Exercise-->
          <section>
           <h3>Let's Develop It</h3>
-         <p>Let's add some spans to our content to help highlight some text. </p>
+         <p>Let's add spans to our content to style specific text. </p>
         </section>      
-        <!-- Pseudo class-->
-        <section>
-          <h3>Pseudo-classes, more CSS for links</h3>
-          <div class="left left-align" style="width:50%">
-          <p>Changing the format of a link when you hover over it is accomplished by using pseudo-classes.</p>
-          <br/>
-          <p>CSS pseudo-classes are used to add special effects to some selectors.</p>
-          </div>
-          <div class="right" style="width:50%">
-          Syntax:	
-<pre><code class="html">
-selector:pseudo-class {
-  property: value;	
-}
-</code></pre>
-          Example:
-<pre><code class="html">
-a:link {
-  text-decoration: none;
-}
-</code></pre>
-        </div>
-        </section>
-        
-        <!-- Pseudo class-->
-        <section>
-          <h3>Pseudo-classes, more CSS for links</h3>
-<pre><code class="html">
-  a:link    { color: #FF0000; } /* unvisited link */
-  a:visited { color: #00FF00; } /* visited link */
-  a:focus   { color: #FF00FF; } /* keyboard focus */
-  a:hover   { color: #FF00FF; } /* mouse over link */
-  a:active  { color: #0000FF; } /* selected link */
-</code></pre>
-          <p>Note: <code>a:hover</code> MUST come after <code>a:link</code> and <code>a:visited</code> in the CSS definition in order to be effective!</p>
-          <p>Note: <code>a:active</code> MUST come after <code>a:hover</code> in the CSS definition in order to be effective!</p>
-        </section>
-       
-        <!-- Exercise-->
-        <section>
-          <h3>Let's Develop It</h3>
-          <p>Add pseudo classes to your links</p>
-        </section>
         
         <!-- Box model-->
         <section>
-          <h3>Box Model</h3>
+          <h3>CSS Box Model</h3>
           <img src="img/box-model.png"/>
         </section>
         
@@ -266,16 +226,20 @@ a:link {
           <h3>Padding</h3>
           15 pixels on all sides
 <pre><code class="css">
-padding: 15px;
+  padding: 15px;
+
 </code></pre>
           10 pixels on top only
 <pre><code class="css">
-padding-top: 10px;
+  padding-top: 10px;
+
 </code></pre>
           10 on top, 5 on right, 3 on bottom, 5 on left
 <pre><code class="css">
-padding: 10px 5px 3px 5px;
+  padding: 10px 5px 3px 5px;
+
 </code></pre>  
+          <h4>CSS</h4>
         </section>
        
         <section>
@@ -283,23 +247,29 @@ padding: 10px 5px 3px 5px;
           <p>Four values<p>
 <pre><code class="css">
   padding: top right bottom left;
+
 </code></pre>
           <p>Two values</p>
 <pre><code class="css">
   padding: top/bottom right/left;
+
 </code></pre>
           <p>One value</p>
 <pre><code class="css">
   padding: all;
+
 </code></pre>
+          <h4>CSS</h4>
         </section>
        
         <section>
           <h3>Padding</h3>
 <pre><code class="css">
   padding: 10px 20px 30px 40px;
+
 </code></pre>
         <img src="img/box-model-padding2.png" alt="Box Model padding" />
+        <h4>CSS</h4>
         </section>
        
         <!-- Border-->
@@ -314,16 +284,20 @@ padding: 10px 5px 3px 5px;
           <p>A solid red border</p>
 <pre><code class="css">
   border: 1px solid #ff0000;
+
 </code></pre>
           <p>A thick dotted black top border</p>
 <pre><code class="css">
   border-top: 4px dotted #000000;
+
 </code></pre>
           <p>Two different border styles</p>
 <pre><code class="css">
   border-top: 1px solid #ff0000;
   border-bottom: 4px dotted #000000;
+
 </code></pre>
+          <h4>CSS</h4>
         </section>
        
         <section>
@@ -332,6 +306,7 @@ padding: 10px 5px 3px 5px;
   border-width: 10px;
   border-style: dashed;
   border-color: #666666;
+
 </code></pre>
           <p>You can specify each property separately, or all three together.</p>
         </section>
@@ -348,15 +323,19 @@ padding: 10px 5px 3px 5px;
           <p>15 pixels on all sides</p>
 <pre><code class="css">
   margin: 15px;
+
 </code></pre>
           <p>10 on top, 5 on right, 3 on bottom, 5 on left</p>
 <pre><code class="css">
   margin: 10px 5px 3px 5px;
+
 </code></pre>
           <p>10 pixels on top</p>
 <pre><code class="css">
   margin-top: 10px;
+
 </code></pre>
+          <h4>CSS</h4>
         </section>
         
         <section>
@@ -366,28 +345,31 @@ padding: 10px 5px 3px 5px;
 <pre><code class="css">
   margin: auto;
   width: 300px;
+
 </code></pre>
           <p>FLUSH-RIGHT</p>
 <pre><code class="css">
   margin-left: auto;
   margin-right: 5px;
   width: 300px;
+
 </code></pre>
+          <h4>CSS</h4>
         </section>
         
         <!-- Exercise-->
         <!-- Exercise -->
 		<section>
 			<h3>Let's Develop It!</h3>
-			<p>Let's add some padding, borders, and margins to our divs.</p>
-			<p>Let's center our entire document in the browser.</p>
+			<p>Add padding, borders, and margins to your divs.</p>
+			<p>Center the entire document in the browser.</p>
 		</section>
         <!-- Width-->
 		<section>
 			<h3>Property: Width</h3>
 			<p>Sets the width of an element.</p>
       <pre><code class="css">
-      width: 300px;
+    width: 300px;
       </code></pre>
 			<p>Does not include padding or borders, remember these add to the width.</p>
 		</section>
@@ -396,7 +378,7 @@ padding: 10px 5px 3px 5px;
 			<h3>Property: Height</h3>
 			<p>Sets the height of an element.</p>
       <pre><code class="css">
-      height: 300px;
+    height: 300px;
       </code></pre>
 			<p>Does not include padding or borders, remember these add to the width.</p>
 		</section>
@@ -406,6 +388,86 @@ padding: 10px 5px 3px 5px;
 			<p>Add a width &amp; height to our divs.</p>
 			<p>Use IDs to target each div with CSS</p>
 		</section>
+
+    <section>
+      <h2>HTML Forms</h2>
+      <img src="img/forms-github.jpg" alt="Github Signup Form">
+    </section>
+
+    <section>
+      <h3>The Form Tag</h3>
+      <p>Marks the start and end of an HTML form for collecting user input.</p>
+      <pre><code class="html">
+  &lt;form action="http://foo.com" method="post">
+
+    &lt;label for="firstname">First name&lt;/label>
+    &lt;input id="firstname" name="firstname">
+
+    &lt;button>Send my greetings&lt;/button>
+
+  &lt;/form>
+      </pre></code>
+      <p><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Sending_and_retrieving_form_data">Sending and retrieving form data</a></p>
+    </section>
+
+    <section>
+      <h3>Input</h3>
+      <p>A multi-type element used for capturing user input.</p>
+      <p>Often called a "form control".</p>
+      <pre><code class="html">
+    &lt;input type="text" id="firstname">
+  </code></pre>
+      <h4>Some types:</h4>
+      <ul>
+        <li>Text (default)</li>
+        <li>Checkbox</li>
+        <li>Radio button</li>
+        <li>Range</li>
+        <li>Search</li>
+        <li>Password</li>
+      </ul>
+      <p style="margin-top:1em;"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">HTML Input Docs</a></p>
+    </section>
+
+    <section>
+      <h3>Labels</h3>
+      <p>Map a label to an input using a <code>for/id</code> attribute pair.</p>
+      <p>Describes an input so a screen reader can identify it.</p>
+      <p>Provides a larger tap/focus area.</p>
+      <pre><code class="html">
+  &lt;label for="firstname">First name&lt;/label>
+  &lt;input id="firstname" type="text">
+      </pre></code>
+  <label for="firstname">First name 
+    <input id="firstname" type="text" style="font-size: 18px;">
+  </label>
+    <p style="margin-top: 1em;"><a href="https://www.w3.org/WAI/tutorials/forms/labels/">More info on labeling controls</a></p>
+    </section>
+
+    <section>
+      <h3>Textarea</h3>
+      <p>A multi-line element for typing paragraphs of text.</p>
+      <pre><code class="html">
+    &lt;textarea name="description" rows="10" cols="50">
+    &lt;/textarea>
+      </pre></code>
+        <label>A penny for your thoughts:<br>
+        <textarea rows="10" cols="50" style="font-size: 18px;"></textarea></label>
+    </section>
+
+    <section>
+      <h3>Buttons</h3>
+      <p>Used to trigger changes in an interface.</p>
+      <pre><code class="html">
+  &lt;button>Edit Profile&lt;/button>
+      </code></pre>
+      <button style="font-size: 18px;">Edit Profile</button>
+    </section>
+
+    <section>
+      <h3>Let's Develop It!</h3>
+      <p>Create an email signup form.</p>
+    </section>
     
       <section>
         <h2>Questions?</h2>
