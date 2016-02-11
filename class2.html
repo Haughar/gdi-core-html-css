@@ -110,9 +110,9 @@
         <section>
           <h3>The CSS Rule</h3>
 <pre><code class="html">
-selector {
-  property: value;
-}
+  selector {
+    property: value;
+  }
 </code></pre>
           <ul class="left-align">
             <li>A block of CSS code is a <strong>rule</strong>.</li>
@@ -126,7 +126,7 @@ selector {
         <section>
           <h3>CSS Syntax</h3>
           <div class="left-align">
-            <p>Declarations:  Property and value of style you plan use on HTML element. </p>
+            <p><strong>Declarations:</strong> Property and value of style you plan use on HTML element. </p>
             <p>Declarations end with a semicolon;</p>
             <p>Declaration groups are surrounded by curly brackets.</p>
           </div>
@@ -158,7 +158,7 @@ selector {
         
         <!-- Selectors ID-->
         <section>
-			    <h3>Selector: ID #</h3>
+			    <h3>Selector: ID</h3>
 <pre><code class="css">
   #footer {
    
@@ -176,7 +176,7 @@ selector {
         
         <!-- Selectors Class-->
         <section>
-			    <h3>Selector: Class .</h3>
+			    <h3>Selector: Class</h3>
 <pre><code class="css">
   .warning {
     
@@ -265,20 +265,6 @@ selector {
         <p>The associated HTML.</p>
         <p><a href="http://codepen.io/marcysutton/pen/zrLVyx">Codepen Example</a></p>
       </section>
-        
-        <!-- Multiple values -->
-        <section>
-        <h3>Property Values</h3>
-        <p>Each property can have one or more comma separated values.</p>
-<pre><code class="css">
-  p {
-    color: white;
-    background-color: red;
-    font-family: Arial, sans-serif;
-  }
-
-</code></pre>
-      </section>
 
         <!-- Properties-->
         <section>
@@ -308,8 +294,9 @@ selector {
         <p>Color name: <code>red</code></p>
         <p>Hexadecimal value: <code>#ff0000</code></p>
         <p>RGB value: <code>rgb(255,0,0)</code></p>
-        <p>Some of the many standard colors are: <font color="aqua" style="background:black;">aqua</font>, black, <font color="blue">blue</font>, <font color="fuchsia">fuchsia</font>, <font color="gray">gray</font>, <font color="grey">grey</font>, <font color="green">green</font>, <font color="lime">lime</font>, <font color="maroon">maroon</font>, <font color="navy">navy</font>, <font color="olive">olive</font>, <font color="purple">purple</font>, <font color="red">red</font>, <font color="silver" style="background:black;">silver</font>, <font color="teal">teal</font>, <font color="white" style="background:black;">white</font>, and <font color="yellow" style="background:black;">yellow</font>.</p>
+        <p>Some of the many named colors are: <font color="aqua" style="background:black;">aqua</font>, black, <font color="blue">blue</font>, <font color="fuchsia">fuchsia</font>, <font color="gray">gray</font>, <font color="grey">grey</font>, <font color="green">green</font>, <font color="lime">lime</font>, <font color="maroon">maroon</font>, <font color="navy">navy</font>, <font color="olive">olive</font>, <font color="purple">purple</font>, <font color="red">red</font>, <font color="silver" style="background:black;">silver</font>, <font color="teal">teal</font>, <font color="white" style="background:black;">white</font>, and <font color="yellow" style="background:black;">yellow</font>.</p>
         <p><a href="http://www.crockford.com/wrrrld/color.html">See all named colors</a></p>
+        <p><a href="arstechnica.com/information-technology/2015/10/tomato-versus-ff6347-the-tragicomic-history-of-css-color-names/">Article: Color names history</a></p>
         </section>
         
         <!-- Background color-->
@@ -333,13 +320,13 @@ selector {
           <p>The <code>font-family</code> property deﬁnes which font is used.</p>
 <pre><code class="css">
   p {
-    font-family: "Arial", sans-serif;
+    font-family: "Arial Narrow", Arial, sans-serif;
   }
 
 </code></pre>
+          <p>Comma-separated list</p>
           <p>Specific font name</p>
           <p>Generic name</p>
-          <p>Comma-separated list</p>
         </section>
       
         <!-- Font size -->
@@ -348,7 +335,6 @@ selector {
           <p>The <code>font-size</code> property speciﬁes the size of the font.</p>
 <pre><code class="css">
   p {
-    font-size: 1.5em;
     font-size: 12px;
   }
 
@@ -356,6 +342,7 @@ selector {
           <p>Pixels</p>
           <p>"em"</p>
           <p>Percentage</p>
+          <p style="margin-top:1em;"><a href="http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/">^^What are these units?</a></p>
         </section>
         
         <!-- Fonts-->
@@ -377,6 +364,7 @@ selector {
   }
 
 </code></pre>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font">CSS Font Reference</a></p>
         </section>
       
         <!-- Connecting HTML to CSS-->
@@ -417,13 +405,12 @@ selector {
       &lt;/style>
       &lt;title>Page Title&lt;/title>
     &lt;/head>
-    &lt;body>
       ...
 
 </code></pre>
-          <p>Inside <code>&lt;head></code> element.</p>
-          <p>Uses <code>&lt;style></code> tag.</p>
+          <p>Uses <code>&lt;style></code> tag inside <code>&lt;head></code> element.</p>
           <p>Can only be used in one HTML file.</p>
+          <p>Sometimes <a href="https://css-tricks.com/authoring-critical-fold-css/">used for performance</a> on large sites.</p>
         </section>
         
         <!-- External-->
@@ -433,11 +420,17 @@ selector {
  &lt;!DOCTYPE html>
   &lt;html lang="en">
     &lt;head>
+
       &lt;link rel="stylesheet" type="text/css" href="style.css">
-      ...
+      
+      &lt;title>Page Title&lt;/title>
+    
+    &lt;/head>
+    &lt;body>
+    ...
 
 </code></pre>
-          <p>Shared resource for several pages.</p>
+          <p>Shared resource for several pages, linked in <code>&lt;head&gt;</code>.</p>
           <p>Easy to maintain in larger projects.</p>
           <p>Preferred by nerds everywhere!</p>
         </section>
@@ -446,11 +439,21 @@ selector {
         <section class="hide-pdf">
           <h3>Let's Develop It</h3>
           <ul>
-            <li>Create a new <code>.css</code> file.</li>
+            <li>Create a new <code>style.css</code> file.</li>
             <li>Link to the file in the <code>&lt;head></code> of your work-in-progress HTML page.</li>
             <li>Add styles in the CSS file to change the colors, background colors or fonts of different elements.</li>
             <li>Try using ids and classes to target specific areas or elements.</li>
           </ul>
+        </section>
+
+        <section>
+          <h3>Grouping Selectors</h3>
+          <p>Use commas to apply the same CSS to multiple selectors:</p>
+          <pre><code class="css">
+        p, ul, ol {
+          font-size: 16px;
+        }
+          </code></pre>
         </section>
         
         <!-- Cascading-->
@@ -460,13 +463,13 @@ selector {
 <pre><code class="css">
   p {
     color: blue;
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
   }
   .red {
     color: red;
   }
   #special {
-    font-family: SomeSpecialFont;
+    font-family: Impact, fantasy;
   }
 
 </code></pre>
@@ -521,11 +524,27 @@ selector {
           <p>Note: <code>a:hover</code> MUST come after <code>a:link</code> and <code>a:visited</code> in the CSS definition in order to be effective!</p>
           <p>Note: <code>a:active</code> MUST come after <code>a:hover</code> in the CSS definition in order to be effective!</p>
         </section>
-       
+
+        <section>
+          <h3>Tip: Add global styles for the body element</h3>
+          <p>Some elements will need more styling, such as links.</p>
+          <pre><code class="css">
+            body {
+              background-color: black;
+              color: white;
+              font-family: Helvetica, sans-serif;
+            }
+            a {
+              color: aqua;
+              text-decoration: underline;
+            }
+          </pre></code>
+        </section>
+
         <!-- Exercise-->
         <section>
           <h3>Let's Develop It</h3>
-          <p>Add pseudo classes to your links</p>
+          <p>Add pseudo classes to your links and continue styling your page.</p>
         </section>
         
        <!-- Question-->
