@@ -48,18 +48,15 @@ section {
 		max-width: 500px;
 		margin-bottom: 20px;
 	}
-		.captioned-image img {
-			padding: 5px;
-		}
 		.captioned-image p {
 			background-color: black;
 			bottom: 0px;
 			color: white;
-			left: 10px;
+			left: 0px;
 			margin: 0;
-			padding: 2px;
+			padding: 2px 0;
 			position: absolute;
-			width: 40%;
+			width: 100%;
 		}
 footer {
 	background-color: #333333;
