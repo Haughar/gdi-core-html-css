@@ -73,6 +73,98 @@
           </div>
         </section>
 
+       <!-- Float-->
+       <section>
+         <h3>Float</h3>
+         <div class="left-align">
+            <ul>
+            <li>"Floating" an element takes it in the normal flow, as far to the left or right of it's containing element as possible.</li>
+            <li>Any other elements, such as paragraphs or lists, will wrap around the floated element.</li>
+            <li>Always specify a width when floating an element, otherwise the element is likely to take up the whole page and not appear floated.</li>
+            <li>You can specify a) whether an element is floated or not, and b) which side it ﬂoats on.</li>
+            </ul>
+         </div>
+       </section>
+       <!--example float-->
+       <section>
+       <h3>Float: Example</h3>
+       <p>Below, a <code>&lt;blockquote></code> is floated to the left, allowing text to wrap around it on the right</p>
+       <img src="img/example-floatbq.png" alt="example float" />
+       </section>
+       <section>
+         <h3>Float</h3>
+<pre><code class="css">
+  .float {
+    float: left;
+    width: 200px;
+    background: yellow;
+  }
+</code></pre>
+        <div style="float:left; text-align: left;width:200px;background:yellow; color:black; padding: 10px;">
+          <small>Hi, I'm a yellow box with black text.<br/>
+          I like to hang out on the left side.</small><br/>
+        </div>
+        <div class="left-align">Not floating element</div>
+        <div class="left-align">Not floating element</div>
+         <div class="left-align">Not floating element with wrapping Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+       </section>
+       
+       <section>
+       <h3>Using floats to place elements side by side</h3> 
+       <p>If you want two block level elements to be side by side, you need to float both elements. One left, and one right.</p>
+       <img src="img/example-float-column.png" alt="Float example" />
+       </section>
+       <!-- Clear-->
+       <section>
+         <h3>Clear</h3>
+         <ul>
+         <li>Clearing tells the element on which side (<code>right</code>, <code>left</code>, or <code>both</code>) other elements <strong>cannot</strong> appear. </li>
+         <li>If you had an image floated left, and you did not want the paragraph to appear next to it, you would add <code>clear: left;</code> to the paragraph.</li>
+         <li>Clearing both sides makes sure ﬂoats don’t ﬂow past the clear element.</li>
+         </ul>
+<pre><code class="css">
+  clear: both; 
+
+  /* 
+  or: 
+  clear: left;
+
+  or:
+  clear: right;
+  */
+
+</code></pre>
+       </section> 
+       
+       <section>
+          <h3>Clear</h3>
+ <pre><code class="css">
+   .float {
+     background: yellow;
+     float: left;
+     width: 50px;
+   }
+   .clear-left {
+     clear: left;
+   }
+ </code></pre>
+         <div style="float:left;width:50px;background:yellow; color:black; ">
+           hi<br/>
+           hi<br/>
+           hi<br/>
+         </div>
+         <div class="left-align">Not floating element</div>
+         <div class="left-align">Not floating element</div>
+         <div class="left-align" style="clear: left;">Non-floating element with a class of <code>.clear-left</code></div>
+        </section>
+        
+        <!-- Exercise-->
+       <section>
+         <h3>Let's Develop It</h3>
+         <p>Let's float our side bar and content areas.</p>
+       </section>
+    
+
       <section>
         <h2>HTML Forms</h2>
         <p>How to collect user input</p>
@@ -106,27 +198,8 @@
       </section>
 
       <section>
-        <h3>Input</h3>
-        <p>A multi-type element used for capturing user input.</p>
-        <p>Often called a "form control".</p>
-        <pre><code class="html">
-      &lt;input type="text" id="firstname" name="username">
-    </code></pre>
-        <h4>Some types:</h4>
-        <ul>
-          <li>Text (default)</li>
-          <li>Checkbox</li>
-          <li>Radio button</li>
-          <li>Range</li>
-          <li>Search</li>
-          <li>Password</li>
-        </ul>
-        <p style="margin-top:1em;"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">HTML Input Docs</a></p>
-      </section>
-
-      <section>
         <h3>Labels</h3>
-        <p>Provide a label for an input using a <code>for</code> and <code>id</code> attributes.</p>
+        <p>Provide a label for a form element using a <code>for</code> and <code>id</code> attributes.</p>
         <p>Describes an input so a screen reader can identify it.</p>
         <p>Provides a larger tap/focus area.</p>
         <pre><code class="html">
@@ -137,6 +210,65 @@
       <input id="firstname" type="text" style="font-size: 18px;">
     </label>
       <p style="margin-top: 1em;"><a href="https://www.w3.org/WAI/tutorials/forms/labels/">More info on form labels</a></p>
+      </section>
+
+      <section>
+        <h3>Input</h3>
+        <p>A multi-type element used for capturing user input.</p>
+        <p>Often called a "form control".</p>
+        <pre><code class="html">
+      &lt;input type="text" id="firstname" name="firstname">
+    </code></pre>
+        <h4>Some types:</h4>
+        <ul>
+          <li>Text (default)</li>
+          <li>Checkbox</li>
+          <li>Radio button</li>
+          <li>Range (Slider)</li>
+          <li>Search</li>
+          <li>Password</li>
+        </ul>
+        <p style="margin-top:1em;"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">HTML Input Docs</a></p>
+      </section>
+      
+      <section>
+        <h3>Inputs (cont'd)</h3>
+        <h4>Checkboxes</h4>
+        <pre><code class="html">
+  &lt;label>
+    &lt;input type="checkbox" name="subscribe">
+    Subscribe
+  &lt;/label>
+        </code></pre>
+        <h4>Radio buttons</h4>
+        <pre><code class="html">
+  &lt;label>
+    &lt;input type="radio" id="one-way" name="method">
+    One-Way
+  &lt;/label>
+  &lt;label>
+    &lt;input type="radio" id="round-trip" name="method">
+    Round Trip
+  &lt;/label>
+        </code></pre>
+        <div class="form-example">
+          <fieldset>
+            <label>
+              <input type="checkbox" name="subscribe">
+              Subscribe
+            </label>
+          </fieldset>
+          <fieldset>
+            <label>
+              <input type="radio" id="one-way" name="method">
+              One-Way
+            </label>
+            <label>
+              <input type="radio" id="round-trip" name="method">
+              Round Trip
+            </label>
+          </fieldset>
+        </div>
       </section>
 
       <section>
@@ -153,11 +285,12 @@
       <section>
         <h3>Buttons</h3>
         <p>Used to trigger changes in an interface.</p>
-        <p>Use the <code>type</code> attribute to specify a button type: <code>submit</code>, <code>reset</code>, or <code>button</code>. Defaults to <code>button</code>.</p>
+        <p>Use the <code>type</code> attribute to specify a button type: <code>submit</code>, <code>reset</code>, or <code>button</code>.</p>
         <pre><code class="html">
     &lt;button>Edit Profile&lt;/button>
         </code></pre>
-        <button style="font-size: 18px;">Edit Profile</button>
+        <button style="font-size: 22px;">Edit Profile</button>
+        <p style="margin-top: 1em;"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button">Button Docs</a></p>
       </section>
 
       <section>
@@ -220,7 +353,7 @@
             <li><a href="https://cyberduck.io/?l=en" target="_blank">CyberDuck</a></li>
             <li><a href="https://panic.com/transmit/" target="_blank">Transmit</a></li>
           </ul>
-          <p style="text-align: left;">PC</p>
+          <p style="margin-top: 1em; text-align: left;">PC</p>
           <ul style="display: block;">
             <li><a href="https://filezilla-project.org/" target="_blank">FileZilla</a></li>
             <li><a href="http://windows.microsoft.com/en-us/windows/work-with-files-ftp-site#1TC=windows-7" target="_blank">Windows Explorer</a></li>

@@ -1,32 +1,42 @@
-.reveal section img.noborder{
+.reveal section img.noborder {
   border-width: 0;
 	box-shadow: none;
 }
-
+.reveal a:not(.image) {
+  text-decoration: underline;
+}
 .reveal section img {
   max-height: 400px;
   max-width: 80%;
 }
 
-div.halfblock{
+div.halfblock {
   float: left;
   width: 45%;
   text-align: left;
   margin-right: 5%;
 }
 
-div.left-align{
+div.left-align {
   text-align: left;
 }
 
-.clear{
+.clear {
   clear: both;
 }
 
-p.credit, table.smalltext{
+p.credit, table.smalltext {
   font-size: 70%;
 }
 
+.form-example fieldset {
+  margin-bottom: 0.5em;
+}
+.form-example input[type=checkbox],
+.form-example input[type=radio] {
+  height: 20px;
+  width: 20px;
+}
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
